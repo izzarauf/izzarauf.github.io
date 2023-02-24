@@ -1,7 +1,32 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <h1>Seni</h1>
-        <p>hobi saya menggambar.</p>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>projek 1 athiyya</title>
+    <style>
+        h1 {text-align: center;}
+        p {text-align: center;}
+        div {text-align: center;}
+    </style>
+</head>
+
+<body style="background-color: aliceblue;">
+    <h1 style="font-family:Perpetua;"><i>Seni</i></h1>
+    <div id="clock"></div>
+        <script>
+            setInterval(() => {
+                let date = new Date()
+                let clock = document.getElementById('clock')
+                clock.innerHTML =
+                 date.getHours()+":"+
+                 date.getMinutes()+":"+
+                 date.getSeconds()
+            }, 1000);
+        </script>
+    <br>
+    <p style="font-family: Franklin Gothic Light; font-weight: 100;">hobi saya menggambar.</p>
+</body>
+
 </html>
