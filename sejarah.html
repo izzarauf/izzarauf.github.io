@@ -1,8 +1,38 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>sejarah seni</title>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>sejarah seni</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div id="clock" style="text-align: center;"></div>
+            <script>
+                setInterval(() => {
+                    let date = new Date()
+                    let clock = document.getElementById('clock')
+                    clock.innerHTML =
+                     date.getHours()+":"+
+                     date.getMinutes()+":"+
+                     date.getSeconds()
+                }, 1000);
+            </script>
+    <br>
+    <h1><i>History of Art</i></h1>
+    <br><br>
+    <p>Manusia gua mulai melukis selama periode Magdalenian antara 17.000 dan 10.000 SM. 
+       <br>Secara umum, orang-orang melukis dengan tiga warna, hitam arang, oker merah, <br>dan 
+       oker kuning. Warna-warna ini berasal dari mangan dan besi.</p>
+    <br><br>
+    <p>Selama abad kuno, orang-orang Yunani melukis dinding vila-vila mereka dan karya arsitektur lainnya. 
+        <br>Mereka secara umum melukis gambar manusia, binatang, atau karya religius yang merincikan ritual 
+        <br>dan sesembahan.
+
+        Lukisan Yunani juga terkenal muncul di keramik. Merah dan hitam secara umum digunakan untuk melukis 
+        <br>gambar kehidupan sehari-hari Yunani.</p>
+    
+    <br><br>
+    <p><a href="index.html">↠ homepage</a></p>
+    <p><a href="sejarah.html">↠ era-era seni</a></p>
 </html>

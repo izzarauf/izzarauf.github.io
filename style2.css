@@ -1,80 +1,63 @@
-body{
+*{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(bg2.jpg);
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman';
+}
+
+p {
+    text-align: center;
+    font-family: 'Perpetua';
+    color:rgb(46, 33, 62);
+    font-weight: bold;
+}
+
+.main{
     width: 100%;
     height: 100vh;
     display: flex;
-    align-items: center;
-    background-color: black;
-    overflow: hidden;
-}
-
-.slide-container{
-    width: 100%;
-    height: 85vh;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    background: linear-gradient(to right, rgb(212, 138, 255), rgb(255, 114, 255))
-}
-
-.image-slider{
-    width: 100%;
-    height: 600px;
-    position: absolute;
-    left: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
-    transition: .75s;
 }
-
-.slide-div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 30px 0 30px;
-}
-
-.img{
+.slider{
+    width: 500px;
+    height: 500px;
     position: relative;
-    width: 240px;
-    height: 370px;
-    transition: .5s;
 }
-
-.button{
+.slider img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+.btn{
     position: absolute;
-    width: 240px;
-    height: 370px;
-    transition: .5s;
-    background-color: rgba(0, 0, 0, .4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
-
-.button:hover{
-    background-color: rgba(0, 0, 0, .2);
+.btn button{
+    background: none;
+    outline: none;
+    border: none;
+    color: red;
 }
-
-#slider-span1:target ~ .image-slider #arca.jpg,
-#slider-span1:target ~ .image-slider #button-1{
-    width: 380px;
-    height: 585px;
-    background-color: transparent;
+.btn button i{
+    font-size: 70px;
 }
-#slider-span2:target ~ .image-slider #kain.jpg,
-#slider-span2:target ~ .image-slider #button-2{
-    width: 380px;
-    height: 585px;
-    background-color: transparent;
+.btn button:hover i{
+    color:rgb(46, 33, 62)
 }
-#slider-span3:target ~ .image-slider #lukisanboma.jpg,
-#slider-span3:target ~ .image-slider #button-3{
-    width: 380px;
-    height: 585px;
-    background-color: transparent;
-}
-
-/*image position*/
-
-#slider-span1:target ~ .image-slider {left: 70%;}
-#slider-span3:target ~ .image-slider {left: 50%;}
